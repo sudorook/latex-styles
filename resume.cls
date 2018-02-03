@@ -46,6 +46,6 @@
 }
 
 \newcommand{\resumesection}[1]{%
-  \section[#1]{\textcolor{primary}{\uppercase{#1} \raisedrulefill[0.5ex]{2pt}}}
+  \section[#1]{\textcolor{primary}{\uppercase{#1} \raisedrulefill[0.5ex]{0.4ex}}}
   \vspace{-1ex}
 }

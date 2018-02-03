@@ -71,7 +71,7 @@
   }
   \thispagestyle{firstpage}
   \renewcommand{\headrulewidth}{2pt}
-  \renewcommand{\headrule}{\textcolor{primary}{\raisedrulefill[0.0ex]{2pt}}}
+  \renewcommand{\headrule}{\textcolor{primary}{\raisedrulefill[0.0ex]{0.4ex}}}
 }
 
 \newcommand{\setbigheader}[3]{%
@@ -88,6 +88,6 @@
   \fancyhead[C]{\sffamily{\thepage}}
   \fancyhead[R]{\sffamily{#2}}
   \pagestyle{fancy}
-  \renewcommand{\headrulewidth}{2pt}
+  \renewcommand{\headrulewidth}{0.4ex}
   \patchcmd{\headrule}{\hrule}{\color{primary}\hrule}{}{}
 }

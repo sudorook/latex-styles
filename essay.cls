@@ -68,6 +68,14 @@
   \thispagestyle{firstpage}
 }
 
+\newcommand{\setbigheader}[2]{%
+  \title{#1}
+  \author{#2}
+  \date{}
+  \maketitle
+  \thispagestyle{empty}
+}
+
 \newcommand{\setbodyheader}[2]{%
   \fancyhf{}% Clear all headers/footers
   \fancyhead[L]{\sffamily{#1}}

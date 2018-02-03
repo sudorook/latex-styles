@@ -7,6 +7,7 @@
 \LoadClass{globals}
 
 \usepackage{fancyhdr}
+\usepackage{etoolbox}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -74,5 +75,5 @@
   \fancyhead[R]{\sffamily{#2}}
   \pagestyle{fancy}
   \renewcommand{\headrulewidth}{2pt}
-  \renewcommand{\headrule}{\textcolor{primary}{\raisedrulefill[0.0ex]{2pt}}}
+  \patchcmd{\headrule}{\hrule}{\color{primary}\hrule}{}{}
 }

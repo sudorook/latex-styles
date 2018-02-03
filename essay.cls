@@ -60,7 +60,7 @@
 % page and the remaining pages. The large font sizes and multiple lines cause
 % this fancyhdr to take more vertical space, and for some reason this causes
 % later fancyhdrs to get shifted down.
-\newcommand{\setfirstheader}[3]{%
+\newcommand{\setsmallheader}[3]{%
   \fancypagestyle{firstpage}{%
     \fancyhf{}% Clear all headers/footers
     \fancyhead[L]{\sffamily{\color{heading}{\Huge{#1}}}}

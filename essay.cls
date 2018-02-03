@@ -74,7 +74,7 @@
   \renewcommand{\headrule}{\textcolor{primary}{\raisedrulefill[0.0ex]{2pt}}}
 }
 
-\newcommand{\setbigheader}[2]{%
+\newcommand{\setbigheader}[3]{%
   \title{#1}
   \author{#2}
   \date{}

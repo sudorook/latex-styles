@@ -77,10 +77,18 @@
 
 \newcommand{\setbigheader}[3]{%
   \title{#1}
-  \author{#2}
+  \author{#3}
   \date{}
-  \maketitle
+  \vspace{3ex}
+  \begin{center}
+    \Huge{#1} \\
+    \vspace{1ex}
+    \Large{#2} \\
+    \large{#3}
+  \end{center}
+  \vspace{2ex}
   \thispagestyle{empty}
+  \headrule{\textcolor{primary}{\raisedrulefill[0.0ex]{0.4ex}}}
 }
 
 \newcommand{\setbodyheader}[2]{%

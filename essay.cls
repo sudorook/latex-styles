@@ -56,6 +56,10 @@
 % Headers for first and remaining page(s)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+% Using this command causes vertical spacing inconsistencies with the first
+% page and the remaining pages. The large font sizes and multiple lines cause
+% this fancyhdr to take more vertical space, and for some reason this causes
+% later fancyhdrs to get shifted down.
 \newcommand{\setfirstheader}[3]{%
   \fancypagestyle{firstpage}{%
     \fancyhf{}% Clear all headers/footers
@@ -66,6 +70,8 @@
     }}
   }
   \thispagestyle{firstpage}
+  \renewcommand{\headrulewidth}{2pt}
+  \renewcommand{\headrule}{\textcolor{primary}{\raisedrulefill[0.0ex]{2pt}}}
 }
 
 \newcommand{\setbigheader}[2]{%

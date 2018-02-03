@@ -61,6 +61,7 @@
 % this fancyhdr to take more vertical space, and for some reason this causes
 % later fancyhdrs to get shifted down.
 \newcommand{\setsmallheader}[3]{%
+  \title{#1}
   \fancypagestyle{firstpage}{%
     \fancyhf{}% Clear all headers/footers
     \fancyhead[L]{\sffamily{\color{heading}{\Huge{#1}}}}

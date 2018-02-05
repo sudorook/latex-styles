@@ -6,6 +6,9 @@
 
 \LoadClass{globals}
 
+\usepackage{xifthen}
+\usepackage{xparse}
+
 \setlength{\parindent}{15pt}
 
 
@@ -51,4 +54,29 @@
 \newcommand{\resumesection}[1]{%
   \section[#1]{\textcolor{primary}{\uppercase{#1} \raisedrulefill[0.5ex]{0.4ex}}}
   \vspace{-1ex}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Headers for first and remaining page(s)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\DeclareDocumentCommand{\makeheadertwo}{m m o o o o o}{%
+  \noindent
+  \begin{minipage}[c]{0.49\textwidth}%
+  \begin{flushleft}%
+    \name{#1}{#2}
+  \end{flushleft}%
+  \end{minipage}\hfill%
+  %
+  \begin{minipage}[c]{0.49\textwidth}%
+  \begin{flushright}
+    \color{subheading}
+    \IfNoValueF{#3}{\ifthenelse{\isempty{#3}}{}{\homepage{#3} \\}}
+    \IfNoValueF{#4}{\ifthenelse{\isempty{#4}}{}{\email{#4} \\}}
+    \IfNoValueF{#5}{\ifthenelse{\isempty{#5}}{}{\phone{#5} \\}}
+    \IfNoValueF{#6}{\ifthenelse{\isempty{#6}}{}{\github{#6} \\}}
+    \IfNoValueF{#7}{\ifthenelse{\isempty{#7}}{}{\gitlab{#7} \\}}
+  \end{flushright}
+  \end{minipage}
 }

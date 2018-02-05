@@ -13,6 +13,9 @@
 % Custom environments
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+% globally suppress page numbers
+\pagestyle{empty}
+
 \newenvironment{headerstyle}%
 {
   \color{heading}

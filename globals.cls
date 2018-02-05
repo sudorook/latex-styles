@@ -85,3 +85,15 @@
   % usage: \whenandwhere{start date}{end date}{location}
   \vspace{-.5ex}{\textcolor{muted}{\small #1 --- #2 $|$ #3}}\vspace{.5ex}%
 }
+
+% load files
+\newcommand{\loadpublicationfile}[1]{%
+  \let\titlecap\relax
+  \bibliographystyle{abbrv}
+  \renewcommand\refname{\vspace{-.99cm}}
+  \begin{flushleft}
+  \vspace{1ex}\color{primarytext}
+  \bibliography{#1}
+  \nocite{*}
+  \end{flushleft}
+}

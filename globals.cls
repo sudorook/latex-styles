@@ -34,10 +34,6 @@
 \definecolor{school}{HTML}{fc8d62}
 \definecolor{hobby}{HTML}{8da0cb}
 
-%\newcommand{\name}[1]{%
-%  \title{#1}
-%  \section[#1]{\color{heading}{\Huge{#1}}}%
-%}
 \newcommand{\name}[2]{%
   \title{#1 #2}
   \section[#1 #2]{\color{subheading}{\Huge{#1}} \color{heading}{\Huge{#2}}}%

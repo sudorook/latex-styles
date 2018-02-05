@@ -78,7 +78,7 @@
   % usage: \employerandjobtitle{employer name}{job title}
   \subsection[#1]{\large\textcolor{heading}{#1} $|$ \textcolor{subheading}{#2}}%
 }
-\newcommand{\researchtopic}[1]{%
+\newcommand{\topic}[1]{%
   \subsection[#1]{\large\textcolor{heading}{#1}}%
 }
 \newcommand{\whenandwhere}[3]{%

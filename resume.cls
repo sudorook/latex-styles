@@ -61,7 +61,7 @@
 % Headers for first and remaining page(s)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\DeclareDocumentCommand{\makeheadertwo}{m m o o o o o}{%
+\DeclareDocumentCommand{\makeheader}{m m o o o o o}{%
   \noindent
   \begin{minipage}[c]{0.49\textwidth}%
   \begin{flushleft}%

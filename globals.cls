@@ -87,13 +87,13 @@
 }
 
 % load files
-\newcommand{\loadpublicationfile}[1]{%
+\newcommand{\loadpublicationfile}[2][abbrv]{%
   \let\titlecap\relax
-  \bibliographystyle{abbrv}
+  \ifthenelse{\isempty{#1}}{\bibliographystyle{abbrv}}{\bibliographystyle{#1}}
   \renewcommand\refname{\vspace{-.99cm}}
   \begin{flushleft}
   \vspace{1ex}\color{primarytext}
-  \bibliography{#1}
+  \bibliography{#2}
   \nocite{*}
   \end{flushleft}
 }

@@ -22,7 +22,9 @@
 % Globals
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%
 % define colors
+%
 \definecolor{heading}{rgb}{0,0,0}             % black
 \definecolor{subheading}{rgb}{0.2,0.2,0.2}    % black
 \definecolor{primarytext}{rgb}{0.1,0.1,0.1}   % dark grey
@@ -39,7 +41,9 @@
   \section[#1 #2]{\color{subheading}{\Huge{#1}} \color{heading}{\Huge{#2}}}%
 }
 
+%
 % define variables with font awesome icons
+%
 \newcommand{\email}[1]{%
   \href{mailto:#1}{#1} \faEnvelopeO%
 }
@@ -56,16 +60,22 @@
   {#1} \faPhone%
 }
 
+%
 % define shapes for skills box
+%
 \newcommand{\workdot}{\raisebox{-0.3ex}{\scalebox{1.9}{\color{work}{$\bullet$}}}}
 \newcommand{\schooldot}{\hspace{0.05ex}\raisebox{0.05ex}{\scalebox{1.25}{\color{school}{$\blacktriangle$}}}}
 \newcommand{\hobbydot}{\hspace{0.17ex}\raisebox{-0.0ex}{\scalebox{1.0}{\color{hobby}{$\blacksquare$}}}}
 \newcommand{\specialstar}{\hspace{0.2ex}\raisebox{-0.08ex}{\scalebox{1.5}{$\ast$}}}
 
+%
 % rule fills
+%
 \newcommand{\raisedrulefill}[2][0ex]{\leaders\hbox{\rule[#1]{1pt}{#2}}\hfill}
 
+%
 % separators
+%
 \newcommand{\sectionsep}{%
   \vspace{1.5ex}%
 }
@@ -73,20 +83,25 @@
   \vspace{0.5ex}%
 }
 
+%
 % custom headers and subtitles
+%
+% usage: \employerandjobtitle{employer name}{job title}
 \newcommand{\employerandjobtitle}[2]{%
-  % usage: \employerandjobtitle{employer name}{job title}
   \subsection[#1]{\large\textcolor{heading}{#1} $|$ \textcolor{subheading}{#2}}%
 }
 \newcommand{\topic}[1]{%
   \subsection[#1]{\large\textcolor{heading}{#1}}%
 }
+% usage: \whenandwhere{start date}{end date}{location}
 \newcommand{\whenandwhere}[3]{%
-  % usage: \whenandwhere{start date}{end date}{location}
   \vspace{-.5ex}{\textcolor{muted}{\small #1 --- #2 $|$ #3}}\vspace{.5ex}%
 }
 
+%
 % load files
+%
+% usage: \loadpublicationfile[style (default:abbrv)]{filename}
 \newcommand{\loadpublicationfile}[2][abbrv]{%
   \let\titlecap\relax
   \ifthenelse{\isempty{#1}}{\bibliographystyle{abbrv}}{\bibliographystyle{#1}}

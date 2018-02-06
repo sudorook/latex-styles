@@ -56,6 +56,7 @@
 % Headers for first and remaining page(s)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+% usage: \setbigheader{Main Title}{Title}{Subtitle}
 % Using this command causes vertical spacing inconsistencies with the first
 % page and the remaining pages. The large font sizes and multiple lines cause
 % this fancyhdr to take more vertical space, and for some reason this causes
@@ -75,6 +76,7 @@
   \renewcommand{\headrule}{\textcolor{primary}{\raisedrulefill[0.0ex]{0.4ex}}}
 }
 
+% usage: \setbigheader{Main Title}{Title}{Subtitle}
 \newcommand{\setbigheader}[3]{%
   \title{#1}
   \author{#3}
@@ -91,6 +93,7 @@
   \headrule{\textcolor{primary}{\raisedrulefill[0.0ex]{0.4ex}}}
 }
 
+% usage: \setbodyheader{Title}{Subtitle}
 \newcommand{\setbodyheader}[2]{%
   \fancyhf{}% Clear all headers/footers
   \fancyhead[L]{\sffamily{#1}}

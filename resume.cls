@@ -61,6 +61,10 @@
 % Headers for first and remaining page(s)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+% usage: \makeheader[homepage][email][phone][github][gitlab]{first name}{last name}
+% Specifying the first and last name is required. The remaining ones are parsed
+% in the order they are available. To skip an optional variable, add empty
+% square brackets.
 \DeclareDocumentCommand{\makeheader}{m m o o o o o}{%
   \noindent
   \begin{minipage}[c]{0.49\textwidth}%

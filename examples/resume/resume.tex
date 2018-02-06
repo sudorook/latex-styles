@@ -1,0 +1,248 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                                            %%
+%%                                    Résumé                                  %%
+%%                                                                            %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PACKAGES AND GLOBALS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{resume}
+\usepackage[margin=1in]{geometry}
+\IfFileExists{config.tex}{\input{config.tex}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% START
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\sffamily
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% HEADER
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{headerstyle}
+
+\makeheader%
+  {\myfirstname}%
+  {\mylastname}%
+  [\myhomepage]%
+  [\myemail]%
+  [\myphone]%
+  []% [\mygithub]%
+  [\mygitlab]
+
+\end{headerstyle}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% COLUMN I
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\noindent
+\begin{minipage}[t]{0.3\textwidth}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{resumestyle}
+\resumesection{Education}
+
+\subsection{BS in Something Important}
+\hangindent=1ex Hong Kong State University \\
+\hangindent=1ex Supreme Honors \\
+\hangindent=1ex GPA:\hspace{.5ex} 5.3.1 / 6.4.2
+
+\end{resumestyle}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Skills
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{resumestyle}
+\resumesection{Skills}
+
+\small{\begin{tabular}{rl}
+  Work & \workdot{} \\
+  School & \schooldot{} \\
+  Fun & \hobbydot{} \\
+  Used in past year & \specialstar{} \\
+\end{tabular}}
+\sectionsep{}
+
+\relpenalty=10000
+\binoppenalty=10000
+\setlength\tabcolsep{2pt} % default value: 6pt
+
+\subsection{Superpowers}
+\begin{tabular}{l}
+  Hindsight \workdot\specialstar{} \\
+  Impeccable Grammar \workdot\schooldot\hobbydot\specialstar{} \\
+  Lickety Speed \schooldot{} \\
+  Low Blood Pressure \schooldot\hobbydot{} \\
+  Mastery over Crickets \hobbydot\specialstar{} \\
+  Night Vision \workdot{} \\
+  Not Canadian \workdot\schooldot\hobbydot\specialstar{} \\
+  Smells of Strawberries \hobbydot\specialstar{} \\
+  Summon Keys \workdot\schooldot\specialstar{} \\
+  Super Strength \schooldot{} \\
+  Tax Exempt \specialstar{} \\
+\end{tabular}
+\sectionsep%
+
+\subsection{Languages}
+\begin{tabular}{ll}
+  Brainfuck \workdot\schooldot\specialstar{} & \LaTeX{} \workdot\hobbydot\specialstar{} \\
+  CSS \workdot\hobbydot\specialstar{}        & LOLCODE \hobbydot{} \\
+  HTML \workdot\hobbydot\specialstar{}       & Shakespeare \workdot\specialstar{} \\
+  Esperanto \hobbydot{}                      & \\
+\end{tabular}
+\sectionsep%
+
+\subsection{OSes / Hypervisors}
+\begin{tabular}{ll}
+  BeOS \hobbydot{}                      & QEMU/libvirt \hobbydot\specialstar{} \\
+  FreeBSD \workdot{}                    & VirtualBox \schooldot\specialstar{} \\
+  GNU Hurd \schooldot{}                 & Windows ME \workdot{} \\
+  Linux \workdot\hobbydot\specialstar{} & 
+\end{tabular}
+\sectionsep%
+
+\end{resumestyle}
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % Courses
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% \begin{resumestyle}
+% \resumesection{Coursework}
+% 
+% \subsection{Undergraduate}
+% \sectionsep%
+% 
+% \subsection{Online}
+% 
+% \end{resumestyle}
+% 
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Honors
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{resumestyle}
+\resumesection{Honors}
+
+\subsection{Awards}
+\hangindent=1ex 2-time Darwin Award winner \\
+\hangindent=1ex Runner-up for \textit{Witch Weekly's Most Charming Smile} \\
+\hangindent=1ex \textit{Time} Magazine's Person of the Year (2006) \\
+\sectionsep%
+
+\subsection{Societies}
+\hangindent=1ex Masonic Lodge No. 247 \\
+\hangindent=1ex The League of Extraordinary Gentlemen \textit{(Pending)}\\
+
+
+\end{resumestyle}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% COLUMN II
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage}\hfill%
+\begin{minipage}[t]{0.67\textwidth}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{resumestyle}
+\resumesection{Experience}
+
+\employerandjobtitle{Whoop-ass Canning Company}{Assembly Line Manager}
+\whenandwhere{431 BC}{371 BC}{Spárti, Laconia} \\
+I managed a team of sixty assembly line workers at a factory where we
+processed, manufactured, and distributed cans of whoop-ass --- and also olive
+oil --- for export, mostly to elementary schools in Newfoundland. During my
+tenure, my specific responsibilities included: \\
+\vspace{0.5ex}
+\hangindent=1ex \ --- Taking names and \textit{then} kicking ass, \\
+\hangindent=1ex \ --- Busting ass, \\
+\hangindent=1ex \ --- Hauling ass, and \\
+\hangindent=1ex \ --- Putting my ass on the line. \\
+\sectionsep%
+
+\employerandjobtitle{Cookie Cutter Corporation}{\textit{De facto} IT}
+\whenandwhere{Jan 1971}{The End of Time}{Apple Pie, USA} \\
+At the behest of my co-workers, I demonstrated my marginal but above average
+computer prowess by fixing their trivial problems. Setting up their Wi-Fi,
+connecting them to the printer, purging antivirus software downloaded from
+banner ads --- I did it all. And how naïve I was. Before long, I became
+\textit{it}. The unwitting IT sap who is tacitly expected by everyone to fix
+their computers and solve their problems. Soon, what I had done as a favor to a
+few people became an inextricable part of my job. A job with no end, no escape.
+
+\end{resumestyle}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Portfolio
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{resumestyle}
+\resumesection{Portfolio}
+
+\topic{GitHub Project Nobody's Seen or Used No. 1}
+\whenandwhere{Apr 2011}{Today}{My Life} \\
+I wrote a not-insubstantial program that implements something that I do often
+enough that taking the time and effort to automate it is (barely) worthwhile
+but so tailored to my idiosyncratic needs to be rendered completely useless to
+the world at large.
+\sectionsep%
+
+\topic{GitHub Project Nobody's Seen or Used No. 2}
+\whenandwhere{Apr 2011}{Today}{My Life} \\
+I forked a popular repository so that I could tweak some of the source code to
+my satifaction. These changes will not at some future point be merged back
+upstream, though. As I have no intention of contributing to the main project or
+keeping up with upstream development, this code will languish unused and
+abandoned.
+\sectionsep%
+
+\topic{Words Interminably Edited for Fear of Being Misunderstood on the
+Internet}
+\whenandwhere{Neuroticism}{Obsessiveness}{Everywhere, World} \\
+Placeholder text here. Still being edited.
+
+\end{resumestyle}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Publications
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{resumestyle}
+\resumesection{Publications}
+\end{resumestyle}
+\vspace{-2.0ex}
+
+\loadpublicationfile{publications}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% END COLUMN II
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage}
+\end{document}

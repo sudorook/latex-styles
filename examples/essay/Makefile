@@ -2,13 +2,10 @@ TEXFILE=essay
 TEX=lualatex
 BIB=bibtex
 
-
 all: ${TEX}
-
 
 ${TEX}:
 	$(TEX) ${TEXFILE} ;\
-
 
 clean: 
 	rm -f ${TEXFILE}.aux

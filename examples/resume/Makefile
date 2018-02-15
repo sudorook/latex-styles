@@ -2,18 +2,14 @@ TEXFILE=resume
 TEX=lualatex
 BIB=bibtex
 
-
 all: ${BIB} ${TEX}
-
 
 ${TEX}:
 	$(TEX) ${TEXFILE} ;\
 
-
 ${BIB}:
 	$(TEX) ${TEXFILE} && \
 	$(BIB) ${TEXFILE} ;\
-
 
 clean: 
 	rm -f ${TEXFILE}.aux

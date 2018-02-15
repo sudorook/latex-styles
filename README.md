@@ -22,11 +22,12 @@ Debian:
 sudo apt install texlive-base texlive-bibtex-extra texlive-fonts-extra texlive-luatex
 ```
 
-I'm not familiar with how to best install texlive packages on macOS or Windows.
-Best of luck.
+I'm not familiar with how to best install texlive packages on macOS, Windows,
+or other Linux distributions. Best of luck.
 
-**NOTE:** Older (LTS) distro releases may not have Font Awesome files or LaTeX
-mappings available in their repos. To get the required files:
+**NOTE:** Older (LTS) Linux distros may not have the Font Awesome files and
+their LaTeX mappings available in their repos. To get the required files,
+install the fontforge bitmap font editor and run:
 
 ```
 git clone https://github.com/xdanaux/fontawesome-latex
@@ -34,13 +35,14 @@ cd fontawesome-latex
 ./generate_tex_bindings.py 4.6.3 # need to install 'fontforge' beforehand
 cp FontAwesome.otf fontawesome.sty fontawesomesymbols-generic.tex \
   fontawesomesymbols-pdftex.tex fontawesomesymbols-xeluatex.tex \
-  /base/of/your/resume/directory/
+  path/to/directory
 ```
 
 
 ## Installation
 
-The makefile will install the cls files in your local texmf directory.
+The makefile will install the LaTeX class (.cls) files in your local texmf
+directory.
 
 To install the class files in your texmf directory, run:
 ```
@@ -57,5 +59,10 @@ does not need to be invoked before `make install`. They function independently.
 
 Run `make clean` to clear out the build files.
 
-**NOTE:** Running `sudo make etc.` as root will not install this globally. It
-will only install the files in the texmf path in /root.
+**NOTE:** Running `sudo make install` as root will not install this globally.
+It will only install the files in the local texmf path in `/root`.
+
+
+## Extra
+
+1. All class files use utf-8 encodings, not the default latin1. 

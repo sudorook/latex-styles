@@ -60,9 +60,29 @@ does not need to be invoked before `make install`. They function independently.
 Run `make clean` to clear out the build files.
 
 **NOTE:** Running `sudo make install` as root will not install this globally.
-It will only install the files in the local texmf path in `/root`.
+It will only install the files in the local texmf path in /root.
 
 
 ## Extra
 
-1. All class files use utf-8 encodings, not the default latin1. 
+### Examples
+
+To build the examples, run
+```
+make example
+```
+
+Look for resume.pdf and essay.pdf in their respective directories.
+
+To clean out the build, run:
+```
+make clean
+```
+
+### Text encoding
+
+All class files use utf-8 encodings, not the default latin1. To set the
+encoding in a tex file, set the first line to:
+```
+%!TEX encoding = UTF-8 Unicode
+```

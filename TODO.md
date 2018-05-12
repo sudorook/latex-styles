@@ -5,5 +5,6 @@
 2. Create an example (and class, if necessary) for CVs. Modify the resume to:
    - Use a single column.
    - Split the Skills chart into >2 columns.
-3. Highlighting text in the documents produced is very confusing and
-   unintuitive.
+3. Text highlighting is very wonky.
+4. Change the makefile. Giving `make` and `make install` completely different
+   functions is confusing.

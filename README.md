@@ -2,7 +2,7 @@
 
 LaTeX styles for writing a résumé or essay.
 
-![Resume Screenshot](resume.svg)
+![Resume Screenshot](assets/resume.svg)
 
 
 ## Requirements

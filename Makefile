@@ -1,6 +1,6 @@
 PACKAGE=reqwyt
 
-TEXMFBASE=$(shell kpsewhich -var TEXMFHOME)
+TEXMFBASE=$(shell kpsewhich -var-value TEXMFHOME)
 INSTALL_DIR=$(TEXMFBASE)/tex/latex/base/$(PACKAGE)
 
 CLS_FILES=essay.cls resume.cls globals.cls

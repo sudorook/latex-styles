@@ -4,7 +4,6 @@ LaTeX styles for writing a résumé or essay.
 
 ![Resume Screenshot](assets/resume.svg)
 
-
 ## Requirements
 
 1. LuaLaTeX
@@ -15,23 +14,25 @@ For Linux users, the requirements can likely be satisfied through your favorite
 distribution's package repository.
 
 Arch Linux:
-```
+
+```sh
 sudo pacman -S texlive-bibtexextra texlive-core texlive-fontsextra
 ```
 
 Debian:
-```
+
+```sh
 sudo apt install texlive-base texlive-bibtex-extra texlive-fonts-extra texlive-luatex
 ```
 
-I'm not familiar with how to best install texlive packages on macOS, Windows,
-or other Linux distributions. Best of luck.
+I'm not familiar with how to best install texlive packages on macOS, Windows, or
+other Linux distributions. Best of luck.
 
 **NOTE:** Older (LTS) Linux distros may not have the Font Awesome files and
 their LaTeX mappings available in their repos. To get the required files,
 install the fontforge bitmap font editor and run:
 
-```
+```sh
 git clone https://github.com/xdanaux/fontawesome-latex
 cd fontawesome-latex
 ./generate_tex_bindings.py 4.6.3 # need to install 'fontforge' beforehand
@@ -40,19 +41,20 @@ cp FontAwesome.otf fontawesome.sty fontawesomesymbols-generic.tex \
   path/to/directory
 ```
 
-
 ## Installation
 
 The makefile will install the LaTeX class (.cls) files in your local texmf
 directory.
 
 To install the class files in your texmf directory, run:
-```
+
+```sh
 make install
 ```
 
 To remove them, run:
-```
+
+```sh
 make uninstall
 ```
 
@@ -61,30 +63,32 @@ does not need to be invoked before `make install`. They function independently.
 
 Run `make clean` to clear out the build files.
 
-**NOTE:** Running `sudo make install` as root will not install this globally.
-It will only install the files in the local texmf path in /root.
-
+**NOTE:** Running `sudo make install` as root will not install this globally. It
+will only install the files in the local texmf path in /root.
 
 ## Extra
 
 ### Examples
 
 To build the examples, run
-```
+
+```sh
 make example
 ```
 
 Look for resume.pdf and essay.pdf in their respective directories.
 
 To clean out the build, run:
-```
+
+```sh
 make clean
 ```
 
 ### Text encoding
 
-All class files use utf-8 encodings, not the default latin1. To set the
-encoding in a tex file, set the first line to:
-```
+All class files use utf-8 encodings, not the default latin1. To set the encoding
+in a tex file, set the first line to:
+
+```tex
 %!TEX encoding = UTF-8 Unicode
 ```

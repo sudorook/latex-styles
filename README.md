@@ -1,4 +1,4 @@
-# Reqwyt LaTeX Style
+# LaTeX Styles
 
 LaTeX styles for writing a résumé or essay.
 
